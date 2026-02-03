@@ -1,0 +1,11 @@
+numpy
+Pillow
+joblib
+scikit-learn
+opencv-python
+flask
+facenet-pytorch
+
+torch
+torchvision
+torchaudio

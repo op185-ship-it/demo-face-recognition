@@ -18,7 +18,7 @@ When installing, make sure the checkbox "Add Python to PATH" is selected.
 Open PowerShell and go to the project folder (adjust the path if yours is different):
 
 ```powershell
-cd C:\Users\YourName\Documents\final-yr-project-from-asif\APP\me_testing
+cd C:\path\to\me_testing
 ```
 
 ## 3) Create and activate a virtual environment
@@ -39,10 +39,9 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 ## 4) Install dependencies
 
-From the project root (not inside `me_testing`), install requirements:
+Install requirements from the project root (`me_testing`):
 
 ```powershell
-cd ..
 pip install -r requirements.txt
 ```
 
@@ -53,11 +52,7 @@ If the install fails due to GPU/CUDA issues, install CPU-only PyTorch:
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
-Then return to `me_testing`:
-
-```powershell
-cd me_testing
-```
+Then return to `me_testing` if you moved elsewhere.
 
 ## 5) Capture training images (per person)
 
